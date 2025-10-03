@@ -1,4 +1,5 @@
-import { BankAccount, WithdrawalRequest, WithdrawalResult, WithdrawalError } from "./types.js";
+import { BankAccount, WithdrawalRequest, WithdrawalResult, WithdrawalError } from "./types";
+//AI changed ./types to ./types.js" and then tests ended with success
 
 function generateTransactionId(): string {
   return `txn_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
