@@ -1,6 +1,6 @@
 import {describe, it, expect} from "vitest";
-import {createAccount, processWithdrawal} from "./banking";
-import {BankAccount, WithdrawalRequest} from "./types";
+import {createAccount, processWithdrawal} from "./banking.js";
+import {BankAccount, WithdrawalRequest} from "./types.js";
 
 describe("Banking Operations", () => {
   describe("Account Creation", () => {
@@ -123,6 +123,7 @@ describe("Banking Operations", () => {
 
       const result = processWithdrawal(account, withdrawal);
       expect(result).toHaveProperty("code", "INVALID_AMOUNT");
+      expect(result).toHaveProperty("message");
     });
 
     it("should reject withdrawal with invalid account ID", () => {
