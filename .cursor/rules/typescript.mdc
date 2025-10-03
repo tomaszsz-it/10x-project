@@ -1,0 +1,7 @@
+---
+description: Creating better TypeScript code
+alwaysApply: false
+---
+When creating TypeScript code, follow these rules:
+
+- When creating eror messages, always apply emojis! 
