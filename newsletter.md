@@ -75,3 +75,4 @@ Plus: **pragmatyzm biznesowy** i **dążenie do niezawodności**
 
 ## Wnioski
 Każde pokolenie programistów przekształca wczorajsze wyzwania w dzisiejsze trywialności, przesuwając granicę możliwości coraz dalej. Kluczowe jest świadome podejście do nowych technologii (szczególnie AI) z zachowaniem sprawdzonych praktyk programistycznych.
+
