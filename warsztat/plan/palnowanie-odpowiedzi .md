@@ -1,3 +1,26 @@
+
+
+Czy możemy zidentyfikować kluczowe segmenty klientów (np. klienci indywidualni vs floty)?
+Rekomendacja: Opracować persony użytkowników i dopasować wymagania UX oraz priorytety funkcji do ich specyficznych potrzeb.
+Jaki jest obecny wolumen rezerwacji telefonicznych i jaki przyjęliśmy cel dla rezerwacji elektronicznych?
+Rekomendacja: Ustalić punkt wyjścia oraz etapy pośrednie (np. 25%, 40%), aby regularnie monitorować postęp osiągania progu 50% rezerwacji online.
+Jak często i w jaki sposób będzie aktualizowana dostępność mechaników i stanowisk?
+Rekomendacja: Zaprojektować intuicyjny panel administracyjny i rozważyć półautomatyczne importy (np. z kalendarza Google), by zminimalizować ręczne błędy.
+Jaki horyzont czasowy ma być udostępniany klientom (np. rezerwacje na najbliższy tydzień vs. miesiąc)?
+Rekomendacja: Określić minimalny i maksymalny okres rezerwacji, by uniknąć nadmiernego obciążenia i zbyt odległych terminów.
+W jaki sposób sekretariat ma wprowadzać rezerwacje telefoniczne do systemu, by unikać konfliktów?
+Rekomendacja: Zdefiniować proces SLA i workflow dla sekretariatu, w tym widok „do potwierdzenia” i synchronizację z kalendarzem systemowym.
+Skąd pozyskamy i jaką jakość mają dane historyczne do AI-owej predykcji koniecznych napraw?
+Rekomendacja: Przeprowadzić audyt dostępnych danych, zdefiniować wymagane pola (model auta, historia serwisowa) i zaplanować mechanizmy ciągłego zbierania feedbacku.
+Jaki format prezentacji dostępnych terminów będzie najbardziej czytelny (lista, kalendarz, widok tygodniowy)?
+Rekomendacja: Przetestować wstępne prototypy UI z użytkownikami warsztatu i klientami, by szybko zweryfikować intuicyjność i szybkość wyboru terminu.
+Oprócz udziału rezerwacji online, jakie wskaźniki sukcesu chcemy monitorować (np. wykorzystanie zasobów, średni czas od rezerwacji do realizacji)?
+Rekomendacja: Zdefiniować dodatkowe KPI–e: stopień wykorzystania mechaników, średni czas oczekiwania klienta i satysfakcję NPS, by kompleksowo ocenić wartość produktu.
+Jakie mamy wymagania niefunkcjonalne dotyczące wydajności (maksymalna liczba jednoczesnych użytkowników, czas odpowiedzi)?
+Rekomendacja: Określić SLA dla responsywności systemu (np. <200 ms przy 100 jednoczesnych zapytaniach) i przetestować obciążeniowo przed premierą.
+Jaki jest planowany harmonogram i dostępność zasobów (liczba deweloperów, UX designer, testerów)?
+Rekomendacja: Opracować szczegółowy roadmap z kluczowymi kamieniami milowymi i przydziałem zasobów, aby na bieżąco monitorować postęp i ryzyka.
+
 1. Aplikacja ma obsługiwać tylko klientóklientów indywidualnych. Floty będą obsłuwiane w Ļóżniejszych cyklach poza MVP
 2.Obecnie wszystkie rezerwacje są telefoniczne, właściciel warszatayu chce zmniejszyć prace sekretariatu wprowadzając system do automatycznyej rezerwacji - Warsztat
 3. Raz na miesiąc. Dostępność zarówno mechaników jak i stanowisk jest planowana miesięcznie. Należy zaprojektować prosty ale intuicyjny panel administracyjny. Jednakże sekretariat odbierając zlecenie telfoniczne może zarezerwować naprawę rezerwująć czas mechnika oraz stanowisko. Na tym etapie nie potrzeba integracji z kalendarzem google

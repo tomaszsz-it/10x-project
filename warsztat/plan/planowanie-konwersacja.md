@@ -96,3 +96,4 @@ wyeksportuj całą konwersację do planowanie-konwersacja.md
 ---
 
 *Plik zawiera pełną historię rozmowy do dalszego planowania PRD.*
+
