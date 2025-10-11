@@ -1,0 +1,37 @@
+erDiagram
+    USERS {
+        UUID user_id PK
+    }
+    EMPLOYEES {
+        UUID employee_id PK
+        VARCHAR type
+    }
+    VEHICLES {
+        UUID vehicle_id PK
+        UUID user_id FK
+        VARCHAR license_plate
+        VARCHAR vin
+    }
+    REPAIRS {
+        UUID repair_id PK
+        VARCHAR name
+        INT duration_minutes
+    }
+    RESERVATIONS {
+        UUID reservation_id PK
+        UUID user_id FK
+        UUID created_by FK
+        UUID vehicle_id FK
+        UUID employee_id FK
+        UUID repair_id FK
+        TIMESTAMPTZ start_ts
+        TIMESTAMPTZ end_ts
+        TEXT recommendation_text
+        ENUM status {New, Cancelled, Done}
+    }
+    USERS ||--o{ VEHICLES : owns
+    USERS ||--o{ RESERVATIONS : makes
+    USERS ||--o{ RESERVATIONS : created_by
+    EMPLOYEES ||--o{ RESERVATIONS : assigned
+    VEHICLES ||--o{ RESERVATIONS : booked_for
+    REPAIRS ||--o{ RESERVATIONS : type
